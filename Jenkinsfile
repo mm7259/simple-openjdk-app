@@ -16,7 +16,7 @@ pipeline {
   agent {
     // Using the Jenkins Agent Pod that we defined earlier
     //node {
-      label "maven-appdev"
+      label "jenkins"
       //customWorkspace "undertow-servlet"
    // }
   }
