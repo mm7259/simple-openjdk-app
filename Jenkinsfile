@@ -14,11 +14,7 @@ def prodTag     = "0.0"
 
 pipeline {
   agent {
-    // Using the Jenkins Agent Pod that we defined earlier
-    //node {
       label "maven-appdev"
-      //customWorkspace "undertow-servlet"
-   // }
   }
   stages {
     // Checkout Source Code and calculate Version Numbers and Tags
@@ -28,7 +24,7 @@ pipeline {
        checkout scm
 
        script {
-          def pom = readMavenPom file: './undertow-servlet/pom.xml'
+          def pom = readMavenPom file: 'pom.xml'
           def version = pom.version
 
           // TBD: Set the tag for the development image: version + build number.
