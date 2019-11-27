@@ -33,8 +33,8 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
-        <version.undertow>1.3.25.Final</version.undertow>
-        <version.jboss.logmanager>2.0.3.Final</version.jboss.logmanager>
+        <version.undertow>1.3.25.Final-redhat-1</version.undertow>
+        <version.jboss.logmanager>2.0.3.Final-redhat-1</version.jboss.logmanager>
     </properties>
 
     <dependencies>
@@ -42,13 +42,13 @@
         <dependency>
             <groupId>io.undertow</groupId>
             <artifactId>undertow-core</artifactId>
-            <version>1.3.25.Final</version>
+            <version>${version.undertow}</version>
         </dependency>
 
         <dependency>
             <groupId>io.undertow</groupId>
             <artifactId>undertow-servlet</artifactId>
-            <version>1.3.25.Final</version>
+            <version>${version.undertow}</version>
         </dependency>
 
         <dependency>
