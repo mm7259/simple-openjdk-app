@@ -42,8 +42,6 @@ pipeline {
     stage('Build War File') {
       steps {
         echo "Building version ${devTag}"
-        sh "cd undertow-servlet"
-        sh "pwd" 
         sh "mvn clean package"
         // TBD
 
