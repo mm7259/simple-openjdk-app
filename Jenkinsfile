@@ -14,7 +14,7 @@ def prodTag     = "0.0"
 
 pipeline {
   agent {
-      label "maven-appdev"
+      label "maven"
   }
   stages {
     // Checkout Source Code and calculate Version Numbers and Tags
